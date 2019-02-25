@@ -1,5 +1,4 @@
-
-import {ADD_PLACE, DELETE_PLACE, SELECTED_PLACE, DESELECT_PLACE} from './actionTypes';
+import { ADD_PLACE, DELETE_PLACE, SELECT_PLACE, DESELECT_PLACE } from './actionTypes';
 
 export const addPlace = (placeName) => { //placeName from App.js function placeAddedHandler
     return {
@@ -10,18 +9,18 @@ export const addPlace = (placeName) => { //placeName from App.js function placeA
 
 export const deletePlace = () => {
     return {
-        tyle: DELETE_PLACE
+        type: DELETE_PLACE
     };
 };
 
-export const selectedPlace = (key) => {
+export const selectPlace = (key) => {
     return {
         type: SELECT_PLACE,
         placeKey: key
     };
 };
 
-export const deselectedPlace = () => {
+export const deselectPlace = () => {
     return {
         type: DESELECT_PLACE
     };
